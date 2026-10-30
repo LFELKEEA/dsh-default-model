@@ -1,0 +1,54 @@
+{
+  "name": "dsh-default-model",
+  "version": "0.1.0",
+  "description": "在设置里直接修改并固定 DeepSeek Harness 的默认模型：provider、model 与推理档位。固定后新建对话、重启 Harness、以及在对话里切换模型都不会再改写它。",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "default-model",
+    "model-selection"
+  ],
+  "author": "LFELKEEA",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LFELKEEA/dsh-default-model.git"
+  },
+  "homepage": "https://github.com/LFELKEEA/dsh-default-model#readme",
+  "bugs": {
+    "url": "https://github.com/LFELKEEA/dsh-default-model/issues"
+  },
+  "scripts": {
+    "test": "node scripts/smoke.mjs && node scripts/client-smoke.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
