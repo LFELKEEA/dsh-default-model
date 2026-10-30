@@ -1,0 +1,19 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Host half (fake services, temp DSH_HOME)
+        run: node scripts/smoke.mjs
+      - name: Client half (mini React, fake fetch)
+        run: node scripts/client-smoke.mjs
