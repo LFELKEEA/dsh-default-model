@@ -1,0 +1,8 @@
+# dsh-default-model bundle patch.
+#
+# 一行 insert 就挂载 Host 半边；浏览器半边由 package.json 的 dsh.client 声明，
+# 并绑定在 name 为整包名的这一行上（子路径行不会携带client半边）。
+- insert:
+    - id: default-model
+      name: 'dsh-default-model'
+      config: {}

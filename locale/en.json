@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Default Model",
+    "description": "Change and pin the Harness default model (provider, model, reasoning effort) from settings. While pinned, new conversations, restarts, and model switches inside a chat leave it alone; unpin any time."
+  }
+}
