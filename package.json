@@ -18,7 +18,8 @@
     "icon.svg",
     "locale",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "scripts"
   ],
   "keywords": [
     "deepseek",
