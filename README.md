@@ -1,5 +1,7 @@
 # dsh-default-model
 
+[![test](https://github.com/LFELKEEA/dsh-default-model/actions/workflows/test.yml/badge.svg)](https://github.com/LFELKEEA/dsh-default-model/actions/workflows/test.yml)
+
 在 **设置 → 默认模型** 里把 DeepSeek Harness 的默认模型（provider / model / 推理档位）**固定**下来：
 新建的对话、重启之后的对话、以及 SurfCore 的 QQ 工作区，都用你在这里选的那一个。
 
